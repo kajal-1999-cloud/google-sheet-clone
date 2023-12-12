@@ -1,0 +1,11 @@
+
+table, thead, tbody,tr,th,td{
+    border: 1px solid grey;
+    border-collapse:collapse;
+}
+
+td{
+min-width: 45px;
+min-height:18px;
+}
+

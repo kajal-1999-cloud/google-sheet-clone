@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheet Clone</title>
+    <link rel="styleSheet" href="./style.css">
+</head>
+<body>
+    <h3 id="current-cell">No Cells Selected</h3>
+    <button id="bold"><b>B</b></button>
+    <button id="italics"><i>I</i></button>
+    <button id="underlined"><u>U</u></button>
+
+
+    <select id="font-size">
+        <option value="10px">10</option>
+        <option value="12px">12</option>
+        <option value="15px">15</option>
+        <option value="18px">18</option>
+        <option value="20px">20</option>
+    </select>
+    <select id="font-family">
+        <option value="serif">Serif</option>
+        <option value="sans-serif">San serif</option>
+        <option value="cursive">cursive</option>
+        <option value="monospace">monospace</option>
+        <option value="chisel">chisel</option>
+    </select>
+    <button id="cut"><span class="material-icons">file_copy</span></button>
+   <button id="copy">copy</button>
+    <button id="paste">paste</button>
+
+    <button id="left">left</button>
+    <button id="center">center</button>
+    <button id="right">right</button>
+<br>  
+<label for="color">Bg-Color</label>
+<input type="color" id="bg-color">
+
+<label for="color">Color</label>
+<input type="color" id="text-color">
+
+<button onclick="downloadJson()"></button>
+<input type="file" id="json-file" accept=".json" />
+
+<button id="Add-button">Add Sheet</button>
+<div id="Add-sheet"></div>
+
+
+    <table>
+        <thead id="table-head">
+            <tr id="head-rows">
+               
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+          
+        </tbody>
+    </table>
+
+    <script src="./script.js"></script>
+</body>
+</html>
